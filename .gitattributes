@@ -1,0 +1,21 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+* text eof=lf
+*.html text
+*.css text
+*.scss text
+*.less text
+*.sass text
+
+# Images and font files should be treated as binary
+# (binary is a macro for -text -diff)
+*.png     binary
+*.jepg    binary
+*.jpg     binary
+*.gif     binary
+*.ttf     binary
+*.eot     binary
+*.otf     binary
+*.woff    binary
+*.woff2   binary
+

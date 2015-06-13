@@ -1,0 +1,12 @@
+# node dependencies
+node_modules/
+
+# Sass cache
+.sass-cache/
+
+# .map files
+*.map
+
+# KDE
+.directory
+
