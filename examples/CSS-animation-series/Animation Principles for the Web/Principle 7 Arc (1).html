@@ -1,0 +1,256 @@
+<meta charset="UTF-8">
+<h1>Principle 7: Arc (1)</h1>
+<h2><a href="http://academy.hsoub.com/code/css/%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D9%83-%D9%81%D9%8A-%D8%B5%D9%81%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-animation-principles-for-the-web-r106/" target="_parent">مبادئ التحريك في صفحات الويب</h2>
+<article class="principle sevena">
+    <div class="shape-container">
+      <div class="shape a"></div>
+    </div>
+  </article>
+
+  <style>
+/******* SEVEN A (Arc) *******/
+.sevena .shape-container {
+  -webkit-animation: move-right 6s infinite cubic-bezier(.37,.55,.49,.67);
+          animation: move-right 6s infinite cubic-bezier(.37,.55,.49,.67);
+  position: absolute;
+  left: calc(50% - 4em);
+  top: calc(50% - 4em);
+}
+.sevena .shape {
+  -webkit-animation: bounce 6s infinite linear;
+          animation: bounce 6s infinite linear;
+  border-radius: 50%;
+  position: relative;
+  left: auto;
+  top: auto;
+}
+
+@-webkit-keyframes move-right {
+  0% {
+    -webkit-transform: translateX(-20em);
+            transform: translateX(-20em);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90%, 100% {
+    -webkit-transform: translateX(20em);
+            transform: translateX(20em);
+    opacity: 0;
+  }
+}
+
+@keyframes move-right {
+  0% {
+    -webkit-transform: translateX(-20em);
+            transform: translateX(-20em);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90%, 100% {
+    -webkit-transform: translateX(20em);
+            transform: translateX(20em);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-8em);
+            transform: translateY(-8em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  15% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  25% {
+    -webkit-transform: translateY(-4em);
+            transform: translateY(-4em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  32.5% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  40% {
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  45% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  50% {
+    -webkit-transform: translateY(3em);
+            transform: translateY(3em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  56% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  60% {
+    -webkit-transform: translateY(6em);
+            transform: translateY(6em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  64% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  66% {
+    -webkit-transform: translateY(7.5em);
+            transform: translateY(7.5em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  70%, 100% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-8em);
+            transform: translateY(-8em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  15% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  25% {
+    -webkit-transform: translateY(-4em);
+            transform: translateY(-4em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  32.5% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  40% {
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  45% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  50% {
+    -webkit-transform: translateY(3em);
+            transform: translateY(3em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  56% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  60% {
+    -webkit-transform: translateY(6em);
+            transform: translateY(6em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  64% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  66% {
+    -webkit-transform: translateY(7.5em);
+            transform: translateY(7.5em);
+    -webkit-animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+            animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  70%, 100% {
+    -webkit-transform: translateY(8em);
+            transform: translateY(8em);
+    -webkit-animation-timing-function: cubic-bezier(.19,1,.7,1);
+            animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+}
+
+/* General styling */
+body {
+  margin: 0;
+  background: #e9b59f;
+  font-family: HelveticaNeue, Arial, Sans-serif;
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 0.75em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.principle {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.shape {
+  background: #2d97db;
+  border: 1em solid #fff;
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  top: calc(50% - 2em);
+  left: calc(50% - 2em);
+}
+  </style>

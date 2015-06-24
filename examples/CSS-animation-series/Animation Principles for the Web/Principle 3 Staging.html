@@ -1,0 +1,208 @@
+<meta charset="UTF-8">
+<h1>Principle 3: Staging</h1>
+<h2><a href="http://academy.hsoub.com/code/css/%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D9%83-%D9%81%D9%8A-%D8%B5%D9%81%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-animation-principles-for-the-web-r106/" target="_parent">مبادئ التحريك في صفحات الويب</h2>
+<article class="principle three">
+    <div class="shape a"></div>
+    <div class="shape b"></div>
+    <div class="shape c"></div>
+  </article>
+
+<style>
+  /******* THREE (Staging) *******/
+
+.three .shape.a {
+  -webkit-transform: translateX(-12em);
+      -ms-transform: translateX(-12em);
+          transform: translateX(-12em);
+}
+
+.three .shape.c {
+  -webkit-transform: translateX(12em);
+      -ms-transform: translateX(12em);
+          transform: translateX(12em);
+}
+
+.three .shape.b {
+  -webkit-animation: three 5s infinite ease-out;
+          animation: three 5s infinite ease-out;
+  -webkit-transform-origin: 0 6em;
+      -ms-transform-origin: 0 6em;
+          transform-origin: 0 6em;
+}
+
+.three .shape.a, .three .shape.c {
+  -webkit-animation: threeb 5s infinite linear;
+          animation: threeb 5s infinite linear;
+}
+
+@-webkit-keyframes three {
+  0%, 10% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: cubic-bezier(.57,-0.5,.43,1.53);
+            animation-timing-function: cubic-bezier(.57,-0.5,.43,1.53);
+  }
+  26%, 30% {
+    -webkit-transform: rotateZ(-40deg);
+            transform: rotateZ(-40deg);
+  }
+  32.5% {
+    -webkit-transform: rotateZ(-38deg);
+            transform: rotateZ(-38deg);
+  }
+  35% {
+    -webkit-transform: rotateZ(-42deg);
+            transform: rotateZ(-42deg);
+  }
+  37.5% {
+    -webkit-transform: rotateZ(-38deg);
+            transform: rotateZ(-38deg);
+  }
+  40% {
+    -webkit-transform: rotateZ(-40deg);
+            transform: rotateZ(-40deg);
+  }
+  42.5% {
+    -webkit-transform: rotateZ(-38deg);
+            transform: rotateZ(-38deg);
+  }
+  45% {
+    -webkit-transform: rotateZ(-42deg);
+            transform: rotateZ(-42deg);
+  }
+  47.5% {
+    -webkit-transform: rotateZ(-38deg);
+            transform: rotateZ(-38deg);
+    -webkit-animation-timing-function: cubic-bezier(.57,-0.5,.43,1.53);
+            animation-timing-function: cubic-bezier(.57,-0.5,.43,1.53);
+  }
+  58%, 100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes three {
+  0%, 10% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: cubic-bezier(.57,-0.5,.43,1.53);
+            animation-timing-function: cubic-bezier(.57,-0.5,.43,1.53);
+  }
+  26%, 30% {
+    -webkit-transform: rotateZ(-40deg);
+            transform: rotateZ(-40deg);
+  }
+  32.5% {
+    -webkit-transform: rotateZ(-38deg);
+            transform: rotateZ(-38deg);
+  }
+  35% {
+    -webkit-transform: rotateZ(-42deg);
+            transform: rotateZ(-42deg);
+  }
+  37.5% {
+    -webkit-transform: rotateZ(-38deg);
+            transform: rotateZ(-38deg);
+  }
+  40% {
+    -webkit-transform: rotateZ(-40deg);
+            transform: rotateZ(-40deg);
+  }
+  42.5% {
+    -webkit-transform: rotateZ(-38deg);
+            transform: rotateZ(-38deg);
+  }
+  45% {
+    -webkit-transform: rotateZ(-42deg);
+            transform: rotateZ(-42deg);
+  }
+  47.5% {
+    -webkit-transform: rotateZ(-38deg);
+            transform: rotateZ(-38deg);
+    -webkit-animation-timing-function: cubic-bezier(.57,-0.5,.43,1.53);
+            animation-timing-function: cubic-bezier(.57,-0.5,.43,1.53);
+  }
+  58%, 100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes threeb {
+  0%, 20% {
+    -webkit-filter: none;
+            filter: none;
+  }
+  40%, 50% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  65%, 100% {
+    -webkit-filter: none;
+            filter: none;
+  }
+}
+
+@keyframes threeb {
+  0%, 20% {
+    -webkit-filter: none;
+            filter: none;
+  }
+  40%, 50% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  65%, 100% {
+    -webkit-filter: none;
+            filter: none;
+  }
+}
+
+/* General styling */
+body {
+  margin: 0;
+  background: #e9b59f;
+  font-family: HelveticaNeue, Arial, Sans-serif;
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 0.75em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.principle {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.shape {
+  background: #2d97db;
+  border: 1em solid #fff;
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  top: calc(50% - 2em);
+  left: calc(50% - 2em);
+}
+</style>

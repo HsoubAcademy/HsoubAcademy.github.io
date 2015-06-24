@@ -1,0 +1,262 @@
+<meta charset="UTF-8">
+<h1>Principle 12: Appeal</h1>
+<h2><a href="http://academy.hsoub.com/code/css/%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D9%83-%D9%81%D9%8A-%D8%B5%D9%81%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-animation-principles-for-the-web-r106/" target="_parent">مبادئ التحريك في صفحات الويب</h2>
+<article class="principle twelve">
+    <div class="shape">
+      <div class="container">
+        <span class="item one"></span>
+        <span class="item two"></span>
+        <span class="item three"></span>
+        <span class="item four"></span>
+      </div>
+    </div>
+  </article>
+
+  <style>
+  /******* TWELVE (Appeal) *******/
+
+.twelve .shape {
+  background: none;
+  border: none;
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  -webkit-perspective-origin: center;
+          perspective-origin: center;
+}
+
+.twelve .shape .container {
+  -webkit-animation: show-container 8s infinite cubic-bezier(.6,-0.44,.37,1.44);
+          animation: show-container 8s infinite cubic-bezier(.6,-0.44,.37,1.44);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 4em;
+  height: 4em;
+  border: 1em solid #fff;
+  background: #2d97db;
+  position: relative;
+}
+
+.twelve .item {
+  background-color: #1f7bb6;
+  position: absolute;
+}
+
+.twelve .item.one {
+  -webkit-animation: show-text 8s 0.1s infinite ease-out;
+          animation: show-text 8s 0.1s infinite ease-out;
+  height: 6%;
+  width: 30%;
+  top: 15%;
+  left: 25%;
+}
+
+.twelve .item.two {
+  -webkit-animation: show-text 8s 0.2s infinite ease-out;
+          animation: show-text 8s 0.2s infinite ease-out;
+  height: 6%;
+  width: 20%;
+  top: 30%;
+  left: 25%;
+}
+
+.twelve .item.three {
+  -webkit-animation: show-text 8s 0.3s infinite ease-out;
+          animation: show-text 8s 0.3s infinite ease-out;
+  height: 6%;
+  width: 50%;
+  top: 45%;
+  left: 25%;
+}
+
+.twelve .item.four {
+  -webkit-animation: show-button 8s infinite cubic-bezier(.64,-0.36,.1,1.43);
+          animation: show-button 8s infinite cubic-bezier(.64,-0.36,.1,1.43);
+  height: 20%;
+  width: 40%;
+  top: 65%;
+  left: 30%;
+}
+
+@-webkit-keyframes show-container {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+    width: 4em;
+    height: 4em;
+  }
+  15%, 90% {
+    width: 12em;
+    height: 12em;
+    -webkit-transform: translate(-4em, -4em);
+            transform: translate(-4em, -4em);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+    width: 4em;
+    height: 4em;
+  }
+}
+
+@keyframes show-container {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+    width: 4em;
+    height: 4em;
+  }
+  15%, 90% {
+    width: 12em;
+    height: 12em;
+    -webkit-transform: translate(-4em, -4em);
+            transform: translate(-4em, -4em);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+    width: 4em;
+    height: 4em;
+  }
+}
+
+@-webkit-keyframes show-text {
+  0%, 15% {
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
+    opacity: 0;
+  }
+  20%, 85% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+  88%, 100% {
+    opacity: 0;
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em);
+    -webkit-animation-timing-function: cubic-bezier(.64,-0.36,.1,1.43);
+            animation-timing-function: cubic-bezier(.64,-0.36,.1,1.43);
+  }
+}
+
+@keyframes show-text {
+  0%, 15% {
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
+    opacity: 0;
+  }
+  20%, 85% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+  88%, 100% {
+    opacity: 0;
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em);
+    -webkit-animation-timing-function: cubic-bezier(.64,-0.36,.1,1.43);
+            animation-timing-function: cubic-bezier(.64,-0.36,.1,1.43);
+  }
+}
+
+@-webkit-keyframes show-button {
+  0%, 25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  35%, 80% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  90%, 100% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes show-button {
+  0%, 25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  35%, 80% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  90%, 100% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+
+
+/* General styling */
+body {
+  margin: 0;
+  background: #e9b59f;
+  font-family: HelveticaNeue, Arial, Sans-serif;
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 0.75em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.principle {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.shape {
+  background: #2d97db;
+  border: 1em solid #fff;
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  top: calc(50% - 2em);
+  left: calc(50% - 2em);
+}
+  </style>

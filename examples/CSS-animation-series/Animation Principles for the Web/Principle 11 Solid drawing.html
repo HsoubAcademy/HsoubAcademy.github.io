@@ -1,0 +1,162 @@
+<meta charset="UTF-8">
+<h1>Principle 11: Solid drawing</h1>
+<h2><a href="http://academy.hsoub.com/code/css/%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D9%83-%D9%81%D9%8A-%D8%B5%D9%81%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-animation-principles-for-the-web-r106/" target="_parent">مبادئ التحريك في صفحات الويب</h2>
+<article class="principle eleven">
+    <div class="shape">
+      <div class="container">
+        <span class="front"></span>
+        <span class="back"></span>
+        <span class="left"></span>
+        <span class="right"></span>
+        <span class="top"></span>
+        <span class="bottom"></span>
+      </div>
+    </div>
+  </article>
+
+  <style>
+  /******* ELEVEN (Solid) *******/
+
+.eleven .shape {
+  background: none;
+  border: none;
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  -webkit-perspective-origin: center;
+          perspective-origin: center;
+}
+.eleven .shape .container {
+  -webkit-animation: eleven 4s infinite cubic-bezier(.6,-0.44,.37,1.44);
+          animation: eleven 4s infinite cubic-bezier(.6,-0.44,.37,1.44);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.eleven .shape span {
+    display: block;
+    position: absolute;
+    opacity: 1;
+    width: 4em;
+    height: 4em;
+    border: 1em solid #fff;
+    background: #2d97db;
+}
+.eleven .shape span.front {
+  -webkit-transform: translateZ(3em);
+          transform: translateZ(3em);
+}
+.eleven .shape span.back {
+  -webkit-transform: translateZ(-3em);
+          transform: translateZ(-3em);
+}
+.eleven .shape span.left {
+  -webkit-transform: rotateY(-90deg) translateZ(-3em);
+          transform: rotateY(-90deg) translateZ(-3em);
+}
+.eleven .shape span.right {
+  -webkit-transform: rotateY(-90deg) translateZ(3em);
+          transform: rotateY(-90deg) translateZ(3em);
+}
+.eleven .shape span.top {
+  -webkit-transform: rotateX(-90deg) translateZ(-3em);
+          transform: rotateX(-90deg) translateZ(-3em);
+}
+.eleven .shape span.bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(3em);
+          transform: rotateX(-90deg) translateZ(3em);
+}
+
+
+@-webkit-keyframes eleven {
+  0% {
+    opacity: 0;
+  }
+  10%, 40% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  60%, 75% {
+    -webkit-transform: rotateX(-20deg) rotateY(-45deg) translateY(4em);
+            transform: rotateX(-20deg) rotateY(-45deg) translateY(4em);
+    -webkit-animation-timing-function: cubic-bezier(1,-0.05,.43,-0.16);
+            animation-timing-function: cubic-bezier(1,-0.05,.43,-0.16);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(-180em) translateX(20em);
+            transform: translateZ(-180em) translateX(20em);
+    opacity: 0;
+  }
+}
+
+
+@keyframes eleven {
+  0% {
+    opacity: 0;
+  }
+  10%, 40% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  60%, 75% {
+    -webkit-transform: rotateX(-20deg) rotateY(-45deg) translateY(4em);
+            transform: rotateX(-20deg) rotateY(-45deg) translateY(4em);
+    -webkit-animation-timing-function: cubic-bezier(1,-0.05,.43,-0.16);
+            animation-timing-function: cubic-bezier(1,-0.05,.43,-0.16);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(-180em) translateX(20em);
+            transform: translateZ(-180em) translateX(20em);
+    opacity: 0;
+  }
+}
+
+/* General styling */
+body {
+  margin: 0;
+  background: #e9b59f;
+  font-family: HelveticaNeue, Arial, Sans-serif;
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 0.75em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.principle {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.shape {
+  background: #2d97db;
+  border: 1em solid #fff;
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  top: calc(50% - 2em);
+  left: calc(50% - 2em);
+}
+  </style>

@@ -1,0 +1,114 @@
+<meta charset="UTF-8">
+<h1>Principle 4: Straight Ahead Action and Pose to Pose</h1>
+<h2><a href="http://academy.hsoub.com/code/css/%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D9%83-%D9%81%D9%8A-%D8%B5%D9%81%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-animation-principles-for-the-web-r106/" target="_parent">مبادئ التحريك في صفحات الويب</h2>
+<article class="principle four">
+    <div class="shape a"></div>
+    <div class="shape b"></div>
+  </article>
+
+<style>/******* FOUR (Straight ahead / Pose to pose) *******/
+
+.four .shape.a {
+    left: calc(50% - 8em);
+    -webkit-animation: four 6s infinite cubic-bezier(.57,-0.5,.43,1.53);
+            animation: four 6s infinite cubic-bezier(.57,-0.5,.43,1.53);
+}
+
+.four .shape.b {
+  left: calc(50% + 8em);
+  -webkit-animation: four 6s infinite steps(1);
+          animation: four 6s infinite steps(1);
+}
+
+@-webkit-keyframes four {
+  0%, 10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  26%, 30% {
+    -webkit-transform: rotateZ(-45deg) scale(1.25);
+            transform: rotateZ(-45deg) scale(1.25);
+  }
+  40% {
+    -webkit-transform: rotateZ(-45deg) translate(2em, -2em) scale(1.8);
+            transform: rotateZ(-45deg) translate(2em, -2em) scale(1.8);
+  }
+  50%, 75% {
+    -webkit-transform: rotateZ(-45deg) scale(1.1);
+            transform: rotateZ(-45deg) scale(1.1);
+  }
+  90%, 100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes four {
+  0%, 10% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  26%, 30% {
+    -webkit-transform: rotateZ(-45deg) scale(1.25);
+            transform: rotateZ(-45deg) scale(1.25);
+  }
+  40% {
+    -webkit-transform: rotateZ(-45deg) translate(2em, -2em) scale(1.8);
+            transform: rotateZ(-45deg) translate(2em, -2em) scale(1.8);
+  }
+  50%, 75% {
+    -webkit-transform: rotateZ(-45deg) scale(1.1);
+            transform: rotateZ(-45deg) scale(1.1);
+  }
+  90%, 100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+/* General styling */
+body {
+  margin: 0;
+  background: #e9b59f;
+  font-family: HelveticaNeue, Arial, Sans-serif;
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 0.75em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.principle {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.shape {
+  background: #2d97db;
+  border: 1em solid #fff;
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  top: calc(50% - 2em);
+  left: calc(50% - 2em);
+}</style>

@@ -1,0 +1,140 @@
+<meta charset="UTF-8">
+<h1>Principle 1: Squash and stretch</h1>
+<h2><a href="http://academy.hsoub.com/code/css/%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D9%83-%D9%81%D9%8A-%D8%B5%D9%81%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-animation-principles-for-the-web-r106/" target="_parent">مبادئ التحريك في صفحات الويب</h2>
+<article class="principle one">
+    <div class="shape"></div>
+    <div class="surface"></div>
+  </article>
+
+
+<style>
+  .one .shape {
+  -webkit-animation: one 4s infinite ease-out;
+          animation: one 4s infinite ease-out;
+}
+
+.one .surface {
+  background: #000;
+  height: 10em;
+  width: 1em;
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% + 10em);
+}
+
+@-webkit-keyframes one {
+  0%, 15% {
+    opacity: 0;
+  }
+  15%, 25% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: cubic-bezier(1,-1.92,.95,.89);
+            animation-timing-function: cubic-bezier(1,-1.92,.95,.89);
+    width: 4em;
+    height: 4em;
+    top: calc(50% - 2em);
+    left: calc(50% - 2em);
+    opacity: 1;
+  }
+  35%, 45% {
+    -webkit-transform: translateX(8em);
+            transform: translateX(8em);
+    height: 6em;
+    width: 2em;
+    top: calc(50% - 3em);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    opacity: 1;
+  }
+  70%, 100% {
+    -webkit-transform: translateX(8em) translateY(5em);
+            transform: translateX(8em) translateY(5em);
+    height: 6em;
+    width: 2em;
+    top: calc(50% - 3em);
+    opacity: 0;
+  }
+}
+
+@keyframes one {
+  0%, 15% {
+    opacity: 0;
+  }
+  15%, 25% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: cubic-bezier(1,-1.92,.95,.89);
+            animation-timing-function: cubic-bezier(1,-1.92,.95,.89);
+    width: 4em;
+    height: 4em;
+    top: calc(50% - 2em);
+    left: calc(50% - 2em);
+    opacity: 1;
+  }
+  35%, 45% {
+    -webkit-transform: translateX(8em);
+            transform: translateX(8em);
+    height: 6em;
+    width: 2em;
+    top: calc(50% - 3em);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    opacity: 1;
+  }
+  70%, 100% {
+    -webkit-transform: translateX(8em) translateY(5em);
+            transform: translateX(8em) translateY(5em);
+    height: 6em;
+    width: 2em;
+    top: calc(50% - 3em);
+    opacity: 0;
+  }
+}
+
+body {
+  margin: 0;
+  background: #e9b59f;
+  font-family: HelveticaNeue, Arial, Sans-serif;
+  color: #fff;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 0.75em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.principle {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.shape {
+  background: #2d97db;
+  border: 1em solid #fff;
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  top: calc(50% - 2em);
+  left: calc(50% - 2em);
+}
+</style>
