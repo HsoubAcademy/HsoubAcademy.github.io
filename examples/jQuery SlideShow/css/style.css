@@ -15,8 +15,8 @@ body {
 }
 
 #slideshow {/*slider container css*/
-  width: 800px;
-  height: 400px;
+  width: 550px;
+  height: 300px;
   overflow: hidden;
   margin: 50px auto 50px auto;
   box-shadow: 0px 0px 50px #333;
