@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+	<meta charset="utf-8" />
+	<title>Pure CSS Polaroid Photo Gallery</title>
+
+	<style type="text/css">
+
+		* { margin: 0; padding: 0; border: 0; }
+
+		body {
+			background: #959796 url(images/wood-repeat.jpg);
+		}
+
+		#container {
+			width: 600px; margin: 40px auto;
+		}
+
+		h1 {
+			font: bold 65px/60px Helvetica, Arial, Sans-serif;
+			text-align: center; color: #eee;
+			text-shadow: 0px 2px 6px #333;
+		}
+
+		h2 a {
+			display: block; text-decoration: none; margin: 0 0 30px 0;
+			font: italic 45px Georgia, Times, Serif;
+			text-align: center; color: #bfe1f1;
+			text-shadow: 0px 2px 6px #333;
+		}
+			h2 a:hover {
+				color: #90bcd0;
+			}
+
+		ul.gallery {
+			list-style: none;
+		}
+		ul.gallery li a {
+			position: relative;
+			float: left;
+			padding: 10px 10px 25px 10px;
+			background: #eee;
+			border: 1px solid #fff;
+			-moz-box-shadow: 0px 2px 15px #333;
+		}
+
+			ul.gallery li a.pic-1 {
+				z-index: 1;
+				-webkit-transform: rotate(-10deg);
+		 		-moz-transform: rotate(-10deg);
+			}
+			ul.gallery li a.pic-2 {
+				z-index: 5;
+				-webkit-transform: rotate(-3deg);
+		 		-moz-transform: rotate(-3deg);
+			}
+			ul.gallery li a.pic-3 {
+				z-index: 3;
+				-webkit-transform: rotate(4deg);
+		 		-moz-transform: rotate(4deg);
+			}
+			ul.gallery li a.pic-4 {
+				z-index: 4;
+				-webkit-transform: rotate(14deg);
+		 		-moz-transform: rotate(14deg);
+			}
+			ul.gallery li a.pic-5 {
+				z-index: 2;
+				-webkit-transform: rotate(-12deg);
+		 		-moz-transform: rotate(-12deg);
+			}
+			ul.gallery li a.pic-6 {
+				z-index: 6;
+				-webkit-transform: rotate(5deg);
+		 		-moz-transform: rotate(5deg);
+			}
+
+			ul.gallery li a:hover {
+				z-index: 10;
+				-moz-box-shadow: 3px 5px 15px #333;
+			}
+
+
+	</style>
+
+</head>
+
+<body dir="rtl">
+
+<div id="container">
+	<h1>معرض صور فورية باستخدام CSS فقط</h1>
+
+	<h2><a href="http://academy.hsoub.com/programming/css/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D8%B9%D8%B1%D8%B6-%D8%B5%D9%88%D8%B1-%D9%81%D9%88%D8%B1%D9%8A%D8%A9-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D9%80css-%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%B5-r154/">الرجوع إلى المقال</a></h2>
+
+	<ul class="gallery">
+		<li><a href="http://www.flickr.com/photos/claudio_ar/2214532638/" class="pic-1"><img src="images/1.jpg" alt="Photograph of a waterfall"></a></li>
+		<li><a href="http://www.flickr.com/photos/galego/3131005845/" class="pic-2"><img src="images/2.jpg" alt="Photograph of clouds and sunlight"></a></li>
+		<li><a href="http://www.flickr.com/photos/claudio_ar/1810490865/" class="pic-3"><img src="images/3.jpg" alt="Photograph of a lake scene at dusk"></a></li>
+		<li><a href="http://www.flickr.com/photos/claudio_ar/2952099761/" class="pic-4"><img src="images/4.jpg" alt="Photograph of a tree and green grass"></a></li>
+		<li><a href="http://www.flickr.com/photos/claudio_ar/2811295698/" class="pic-5"><img src="images/5.jpg" alt="Photograph of a beach sunset"></a></li>
+		<li><a href="http://www.flickr.com/photos/claudio_ar/2601700491/" class="pic-6"><img src="images/6.jpg" alt="Photograph of a flower and lake"></a></li>
+	</ul>
+
+</div>
+
+
+
+</body></html>
