@@ -1,0 +1,76 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+    margin: 0; padding: 0; border: 0;
+}
+
+body {
+    margin: 200px;
+    font-family: Helvetica;
+    background: #d4f2ff;
+}
+
+#crumbs {
+    text-align: center;
+}
+
+    #crumbs ul {
+        list-style: none;
+        display: inline-table;
+    }
+        #crumbs ul li {
+            display: inline;
+        }
+
+        #crumbs ul li a {
+            display: block;
+            float: left;
+            height: 50px;
+            background: #3498db;
+            text-align: center;
+            padding: 30px 40px 0 80px;
+            position: relative;
+            margin: 0 10px 0 0;
+
+            font-size: 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+            #crumbs ul li a:after {
+                content: "";
+                border-top: 40px solid transparent;
+                border-bottom: 40px solid transparent;
+                border-left: 40px solid #3498db;
+                position: absolute; right: -40px; top: 0;
+                z-index: 1;
+            }
+
+            #crumbs ul li a:before {
+                content: "";
+                border-top: 40px solid transparent;
+                border-bottom: 40px solid transparent;
+                border-left: 40px solid #d4f2ff;
+                position: absolute; left: 0; top: 0;
+            }
+
+                #crumbs ul li:first-child a {
+                    border-top-left-radius: 10px; border-bottom-left-radius: 10px;
+                }
+                #crumbs ul li:first-child a:before {
+                    display: none;
+                }
+
+                #crumbs ul li:last-child a {
+                    padding-right: 80px;
+                    border-top-right-radius: 10px; border-bottom-right-radius: 10px;
+                }
+                #crumbs ul li:last-child a:after {
+                    display: none;
+                }
+
+            #crumbs ul li a:hover {
+                background: #fa5ba5;
+            }
+                #crumbs ul li a:hover:after {
+                    border-left-color: #fa5ba5;
+                }
+
+
