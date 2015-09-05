@@ -1,0 +1,156 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	font: 14px/26px Georgia, Serif; color: #444a54;
+	background: #2d3237 url(images/bg-photo.jpg) center top no-repeat fixed;
+}
+
+#container {
+	width: 960px; margin: 50px auto;
+}
+
+#header {
+	background: url(images/content-top.png) center bottom no-repeat; overflow: hidden;
+}
+	#header p#logo {
+		position: relative; width: 295px; margin: 0 auto -74px auto;
+	}
+	
+	#header ul {
+		width: 916px; margin: 0 auto 110px auto;
+		overflow: hidden; list-style: none; 
+	}
+		#header li {
+			float: left;
+		}
+			#header li:nth-child(1) {
+				margin: 0 70px 0 0;
+			}
+			#header li:nth-child(2) {
+				margin: 0 320px 0 0;
+			}
+			#header li:nth-child(3), #header li:nth-child(4) {
+				margin: 0 0 0 70px;
+			}
+			
+				#header li a {
+					font-size: 16px; letter-spacing: 9px;
+					color: #4e5761; text-decoration: none; 
+				}
+					#header li a:hover {
+						color: #7c8896;
+					}
+				
+		
+#content {
+	padding: 0 52px; overflow: hidden;
+	background: url(images/content-repeat.png) center top repeat-y;
+}		
+
+	#content #feature {
+		width: 916px; height: 420px; position: relative; margin: 0 0 30px -30px;
+		background: url(images/feature-bg.jpg);
+	}
+		#content #feature #feature-content {
+			position: relative; width: 384px; top: 92px; left: 460px;
+		}
+			#content #feature #feature-content h1 {
+				width: 384px; height: 91px; margin: 0 0 5px 0;
+				background: url(images/explore-the-forest.png); text-indent: -9999px;
+			}
+			#content #feature #feature-content p {
+				color: #fff; margin: 0 0 15px 8px;
+			}
+			#content #feature #feature-content p.btn a {
+				display: block; width: 163px; height: 39px;
+				background: url(images/begin-your-journey.png); text-indent: -9999px;
+			}
+				#content #feature #feature-content p.btn a:hover {
+					margin: -1px 0 0 0;
+				}
+
+	#content #main {
+		width: 536px; float: left; margin: 0 20px 0 0;
+	}
+	
+	
+	#content h2 {
+		font-size: 20px; font-weight: normal; margin: 0 0 20px 0;
+	}
+	
+	#content p {
+		margin: 0 0 20px 0;
+	}
+	#content a {
+		color: #3f6489;
+	}
+		#content a:hover {
+			color: #0d3965;
+		}
+			
+	
+	#content dl {
+		
+	}
+		#content dt {
+			float: left; width: 40px; height: 50px; margin: 0 15px 0 0;
+			background: #a1a3a5 url(images/date-bg.png);
+			font-size: 30px; color: #fff; text-align: center;
+		}
+			#content dt span {
+				display: block; font-size: 12px; font-weight: bold;
+				text-transform: uppercase;
+			}
+		
+		#content dd {
+			float: left; width: 480px; 
+		}
+			#content dd h3 {
+				float: left; font-size: 20px; font-weight: normal;
+			}
+			#content dd span {
+				float: left; margin: 4px 0 0 10px; visibility: hidden;
+			}
+			#content dd p {
+				clear: left;
+			}
+			#content dd:hover span {
+				visibility: visible;
+			}
+			
+	
+	
+	#content #side {
+		width: 300px; float: left;
+	}
+		
+		#content .aside {
+			padding: 17px 0 0 17px; margin: 0 0 30px 0;
+			background: url(images/aside-bg.png) center top no-repeat;
+		}
+			#content .aside img {
+				margin: 0 0 15px 0;
+			}
+
+		
+		
+#footer {
+	padding: 70px 22px;
+	background: url(images/content-bottom.png) center top no-repeat;
+}
+	#footer p#back-to-top {
+		float: right; font-size: 11px;
+	}
+		#footer p#back-to-top a {
+			color: #fff; text-decoration: none;
+		}
+			#footer p#back-to-top a:hover {
+				color: #d7d9d8;
+			}
+		
+		
+		
+		
+	
