@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <title>شركة عربي</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container-fluid">
+         <div class="row">
+            <nav class="navbar navbar-default custom-navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle btn custom-btn collapsed" data-toggle="collapse" data-target="#navbar-collapsed-menu">
+                            <i class="fa fa-bars fa-lg"></i>
+                        </button>
+                        <a href="." class="navbar-brand">
+                            <img src="images/logo.png" alt="شركة عربي"></a>
+                    </div>
+                    <div id="navbar-collapsed-menu" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href=".">الرئيسية</a>
+                            </li>
+                            <li >
+                                <a href="about.html">عن الشركة</a>
+                            </li>
+                            <li>
+                                <a href="projects.html">مشاريعنا</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">المدونة</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">تواصل معنا</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div id="banner" class="container-fluid col-xs-12">
+                <div id="banner-img" style="background-image:url(images/banner-add-blog.jpg">
+                    <div class="overlay">
+                        <h1 class="title1">إضافة ندوينة</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-7 col-md-offset-3">
+                    <form class="form">
+                        <div class="form-group col-sm-6">
+                            <label >عنوان التدوينة</label>
+                            <input type="text" name="blog-title" required class="form-control custom-form-control input-lg">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label >التصنيف</label>
+                            <select id="category-selection" name="blog-category" placeholder="البريد الإلكتروني" required class="form-control custom-form-control input-lg">
+                                <option value="design" selected>تصميم</option>
+                                <option value="design">برمجة</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label >تفاصيل التدوينة</label>
+                            <textarea name="blog-body" required placeholder="النص" cols="30" rows="5" class="form-control custom-form-control input-lg"></textarea>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <button class="btn custom-btn btn-primary custom-btn-main">
+                                    إضافة التدوينة
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="row">
+            <div class="container-fluid">
+                <div class="col-xs-12 text-center">
+                    <h2>
+                        شركة عربي
+                    </h2>
+                    <hr style="width:5%;border-top:3px solid #EEE;">
+                </div>
+                <div id="footer-nav-links" class="col-xs-12 text-center">
+                    <a href=".">الصفحة الرئيسية</a>
+                    <a href="about.html">من نحن</a>
+                    <a href="projects.html">المشاريع السابقة</a>
+                    <a href="blog.html">المدونة</a>
+                    <a href="contact.html">تواصل معنا</a>
+                </div>
+                <hr>
+                <div class="col-xs-12 text-center">
+                    <form class="form form-inline">
+                        <label class="custom-heading">اشترك بالنشرة البريدية</label>
+                        <br>
+                        <div class="input-group input-group-lg">
+                            <input id="footer-email" placeholder="البريد الإلكتروني" type="text" class="form-control">
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-primary custom-btn-primary custom-btn">متابعة</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <hr>
+                <div class="col-xs-12 text-center">
+                    <h5>جميع الحقوق محفوظة 2016 &copy; </h5>
+                </div>
+            </div>
+        </div>
+
+   </div>
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
